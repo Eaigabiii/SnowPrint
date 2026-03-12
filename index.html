@@ -995,10 +995,14 @@
             .nav-links { display: none; }
             .menu-btn { display: flex; }
             .mobile-overlay, .mobile-drawer { display: block; }
-            .hero { padding: 80px 16px 40px; }
-            .hero h1 { font-size: 2.8rem; letter-spacing: -1.5px; }
+            /* reduce hero padding and remove large background graphic on phones */
+            .hero { padding: 60px 16px 32px; }
+            .hero-logo-bg { display: none; }
+            .hero h1 { font-size: 2.4rem; letter-spacing: -1.5px; }
             .hero-sub { font-size: 1rem; }
             .hero-ctas { flex-direction: column; gap: 12px; }
+            /* make CTA button full width on small screens */
+            .btn-wpp-hero { width: 100%; justify-content: center; }
             .hero-stats { flex-wrap: wrap; gap: 0; padding: 16px 20px; }
             .stat-item { padding: 10px 20px; }
             .diferenciais-grid { grid-template-columns: 1fr; }
@@ -1011,13 +1015,17 @@
             .diferenciais-header, .catalogo-header { flex-direction: column; align-items: flex-start; }
         }
         @media (max-width: 600px) {
-            .hero h1 { font-size: 2.4rem; }
+            .hero h1 { font-size: 2.2rem; }
             .hero-sub { font-size: 0.95rem; }
+            .btn-wpp-hero { padding: 14px 24px; }
             .products-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 480px) {
-            .hero h1 { font-size: 2.2rem; }
+            .hero { padding: 50px 12px 28px; }
+            .hero h1 { font-size: 2rem; }
+            .hero-sub { font-size: 0.9rem; }
+            .btn-wpp-hero { padding: 12px 20px; }
             .products-grid { grid-template-columns: 1fr; }
         }
     </style>
