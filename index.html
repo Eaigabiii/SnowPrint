@@ -225,6 +225,18 @@
             overflow: hidden;
             padding: 120px 24px 80px;
         }
+        .hero-logo-bg {
+            position: absolute;
+            width: min(520px, 70vw);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.10;
+            pointer-events: none;
+            user-select: none;
+            filter: brightness(10) saturate(0);
+            z-index: 0;
+        }
         /* orbs animados */
         .hero-orb {
             position: absolute;
@@ -1047,6 +1059,7 @@
         <div class="hero-orb orb-1"></div>
         <div class="hero-orb orb-2"></div>
         <div class="hero-orb orb-3"></div>
+        <img src="https://i.ibb.co/K8cWpfG/logo-sem-fundo-snow.png" alt="" class="hero-logo-bg" aria-hidden="true">
 
         <div class="hero-content">
             <div class="hero-badge" data-reveal>
@@ -1144,7 +1157,7 @@
                 <div class="dif-card" data-reveal style="transition-delay:.2s">
                     <div class="dif-icon"><i data-lucide="headphones" size="22"></i></div>
                     <h3>Atendimento Ágil</h3>
-                    <p>Orçamento em até 48h, comunicação direta pelo WhatsApp e acompanhamento do pedido em tempo real.</p>
+                    <p>Orçamento em até 24 horas, comunicação direta pelo WhatsApp com acompanhamento dos pedidos com total atenção.</p>
                 </div>
             </div>
         </div>
