@@ -1666,23 +1666,6 @@
                 setTimeout(() => el.classList.add('is-visible'), 100);
             });
         });
-
-        /* WhatsApp mobile fix */
-        function isMobile() {
-            return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = ['float-wpp-link', 'drawer-wpp-link', 'cta-wpp-link'];
-            links.forEach(id => {
-                const link = document.getElementById(id);
-                if (link && isMobile()) {
-                    const url = new URL(link.href);
-                    const phone = url.pathname.slice(1);
-                    const text = url.searchParams.get('text');
-                    link.href = `whatsapp://send?phone=${phone}&text=${encodeURIComponent(text)}`;
-                }
-            });
-        });
     </script>
 </body>
 </html>
