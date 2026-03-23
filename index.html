@@ -737,6 +737,19 @@
         .bento-card:hover .bento-img-overlay span { opacity: 1; transform: translateY(0); }
 
         /* =========================================
+           GALERIA
+        ========================================= */
+        .galeria { padding: 120px 5%; background: rgba(255,255,255,0.58); }
+        .galeria .container { max-width: 1200px; margin: 0 auto; }
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+        }
+        .galeria .bento-card { border: 1px solid rgba(37,99,235,0.08); }
+        .galeria .bento-img-wrap img { aspect-ratio: 1.1 / 1; object-fit: cover; }
+
+        /* =========================================
            CTA FINAL
         ========================================= */
         .cta-wrap { padding: 0 5% 120px; }
@@ -1036,7 +1049,7 @@
     <div class="cursor-glow" id="cursorGlow"></div>
 
     <!-- Float WhatsApp -->
-    <a href="https://wa.me/5511915152656?text=Olá! Gostaria de fazer um orçamento." class="float-wpp" target="_blank" aria-label="WhatsApp">
+    <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento." class="float-wpp" target="_blank" aria-label="WhatsApp">
         <i data-lucide="message-circle" size="26"></i>
     </a>
 
@@ -1049,7 +1062,7 @@
         <a href="#home" onclick="closeDrawer()">Início</a>
         <a href="#catalogo" onclick="closeDrawer()">Catálogo</a>
         <a href="#campanhas" onclick="closeDrawer()">Campanhas</a>
-        <a href="https://wa.me/5511915152656?text=Olá! Vim pelo site e gostaria de um orçamento." class="btn-wpp-full" target="_blank" onclick="closeDrawer()">
+        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn-wpp-full" target="_blank" onclick="closeDrawer()">
             <i data-lucide="message-circle" size="18"></i> Pedir Orçamento
         </a>
     </div>
@@ -1064,7 +1077,8 @@
                 <li><a href="#home">Início</a></li>
                 <li><a href="#catalogo">Catálogo</a></li>
                 <li><a href="#campanhas">Campanhas</a></li>
-                <li><a href="https://wa.me/5511915152656?text=Olá! Gostaria de fazer um orçamento." class="btn-nav" target="_blank">Pedir Orçamento</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5511915152656&text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento." class="btn-nav" target="_blank">Pedir Orçamento</a></li>
             </ul>
             <button class="menu-btn" onclick="openDrawer()" aria-label="Menu">
                 <i data-lucide="menu" size="24"></i>
@@ -1092,7 +1106,7 @@
                 Produtos personalizados com precisão e acabamento premium. Sua marca impressa onde importa.
             </p>
             <div class="hero-ctas" data-reveal style="transition-delay:.3s">
-                <a href="https://wa.me/5511915152656?text=Quero fazer um orçamento!" class="btn-wpp-hero" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Quero%20fazer%20um%20or%C3%A7amento%21" class="btn-wpp-hero" target="_blank">
                     <i data-lucide="message-circle" size="18"></i> Solicitar orçamento
                 </a>
                 <a href="#catalogo" class="btn-ghost-hero">
@@ -1202,7 +1216,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Garrafa Térmica 500ml</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Garrafa Térmica 500ml" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Garrafa%20T%C3%A9rmica%20500ml" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1214,7 +1228,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Caneca Térmica 350ml</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Caneca Térmica 350ml" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Caneca%20T%C3%A9rmica%20350ml" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1226,7 +1240,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Copo Térmico 320ml</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Copo Térmico 320ml" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Copo%20T%C3%A9rmico%20320ml" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1238,7 +1252,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Taça Térmica Premium</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Taça Térmica Premium" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Ta%C3%A7a%20T%C3%A9rmica%20Premium" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1250,7 +1264,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Power Bank 10.000 mAh</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Power Bank 10.000 mAh" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Power%20Bank%2010.000%20mAh" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1262,7 +1276,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Caixa de Som Bluetooth</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Caixa de Som Bluetooth" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Caixa%20de%20Som%20Bluetooth" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1274,7 +1288,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Umidificador de Ambiente</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Umidificador de Ambiente" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Umidificador%20de%20Ambiente" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1286,7 +1300,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Boné Poliéster Aba Curva</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Boné Poliéster" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Bon%C3%A9%20Poli%C3%A9ster" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1298,7 +1312,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Chaveiro Abridor de Metal</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Chaveiro Abridor de Metal" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Chaveiro%20Abridor%20de%20Metal" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1310,7 +1324,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Mochila Saco Esportiva</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Mochila Saco Esportiva" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Mochila%20Saco%20Esportiva" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1322,7 +1336,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Eco Bag Sustentável</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Eco Bag" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Eco%20Bag" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1334,7 +1348,7 @@
                     </div>
                     <div class="product-body">
                         <h3>Kit Banho 6 Peças</h3>
-                        <a href="https://wa.me/5511915152656?text=Gostaria de orçar: Kit Banho 6 Peças" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
+                        <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Gostaria%20de%20or%C3%A7ar%3A%20Kit%20Banho%206%20Pe%C3%A7as" class="btn-wpp-sm" target="_blank"><i data-lucide="message-circle" size="14"></i> Orçar produto</a>
                     </div>
                 </div>
 
@@ -1391,6 +1405,87 @@
         </div>
     </section>
 
+    <!-- ======================== GALERIA ======================== -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <div class="catalogo-header">
+                <div>
+                    <div class="section-eyebrow" data-reveal>Galeria</div>
+                    <h2 class="section-title" data-reveal style="transition-delay:.05s">Nossos Produtos em Uso</h2>
+                    <p class="section-desc" data-reveal style="transition-delay:.1s">Veja exemplos reais dos itens personalizados e inspire-se para sua próxima campanha.</p>
+                </div>
+            </div>
+            <div class="galeria-grid">
+                <div class="bento-card" data-reveal>
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-01.jpg','Garrafa Térmica Premium')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-01.jpg" alt="Garrafa Térmica Premium" loading="lazy">
+                    </div>
+                </div>
+                <div class="bento-card" data-reveal style="transition-delay:.04s">
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-02.jpg','Copo Térmico Personalizado')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-02.jpg" alt="Copo Térmico Personalizado" loading="lazy">
+                    </div>
+                </div>
+                <div class="bento-card" data-reveal style="transition-delay:.08s">
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-03.jpg','Caixa de Som Bluetooth')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-03.jpg" alt="Caixa de Som Bluetooth" loading="lazy">
+                    </div>
+                </div>
+                <div class="bento-card" data-reveal style="transition-delay:.12s">
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-04.jpg','Chaveiro Abridor')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-04.jpg" alt="Chaveiro Abridor" loading="lazy">
+                    </div>
+                </div>
+                <div class="bento-card" data-reveal style="transition-delay:.16s">
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-05.jpg','Boné Personalizado')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-05.jpg" alt="Boné Personalizado" loading="lazy">
+                    </div>
+                </div>
+                <div class="bento-card" data-reveal style="transition-delay:.20s">
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-06.jpg','Eco Bag Sustentável')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-06.jpg" alt="Eco Bag Sustentável" loading="lazy">
+                    </div>
+                </div>
+                <div class="bento-card" data-reveal style="transition-delay:.24s">
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-07.jpg','Power Bank 10.000 mAh')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-07.jpg" alt="Power Bank 10.000 mAh" loading="lazy">
+                    </div>
+                </div>
+                <div class="bento-card" data-reveal style="transition-delay:.28s">
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-08.jpg','Umidificador/ Acessório de Escritório')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-08.jpg" alt="Umidificador de Ambiente" loading="lazy">
+                    </div>
+                </div>
+                <div class="bento-card" data-reveal style="transition-delay:.32s">
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-09.jpg','Mochila Saco Esportiva')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-09.jpg" alt="Mochila Saco Esportiva" loading="lazy">
+                    </div>
+                </div>
+                <div class="bento-card" data-reveal style="transition-delay:.36s">
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-10.jpg','Kit de Brindes Premium')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-10.jpg" alt="Kit de Brindes Premium" loading="lazy">
+                    </div>
+                </div>
+                <div class="bento-card" data-reveal style="transition-delay:.40s">
+                    <div class="bento-img-wrap" onclick="openLB('images/galeria-11.jpg','Cesto de Banho Natural')">
+                        <div class="bento-img-overlay"><span><i data-lucide="zoom-in" size="14"></i> Ampliar</span></div>
+                        <img src="images/galeria-11.jpg" alt="Cesto de Banho Natural" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ======================== CTA FINAL ======================== -->
     <div class="cta-wrap" id="contato">
         <div class="cta-box" data-reveal>
@@ -1398,7 +1493,7 @@
             <div class="cta-content">
                 <h2>Pronto para deixar<br>sua marca <em>inesquecível?</em></h2>
                 <p>Fale com a gente agora. Orçamento rápido, atendimento humano e entrega no prazo.</p>
-                <a href="https://wa.me/5511915152656?text=Olá! Vim pelo site da Snow Print e gostaria de solicitar um orçamento para brindes personalizados." class="btn-cta-wpp" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=5511915152656&text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Snow%20Print%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20brindes%20personalizados." class="btn-cta-wpp" target="_blank">
                     <i data-lucide="message-circle" size="22"></i> Solicitar orçamento pelo WhatsApp
                 </a>
                 <div class="cta-contacts">
